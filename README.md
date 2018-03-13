@@ -6,9 +6,18 @@
 
 vps需要打开tun/tap
 
+先克隆
+
 > git clone git@github.com:sinoyster/uml_ss.git
 
-修改配置init_uml.sh：
+进入目录修改配置init_uml.sh：
+
+```shell
+cd uml_ss
+vi init_uml.sh
+```
+
+建议只修改加密码，默认的chacha20也足够安全
 
 ```shell
 
@@ -41,6 +50,6 @@ export UML_MEM="16M"            # uml linux内存 最低16M
 
 在运行并nohup
 
-> nohup ./start_uml.sh
+> nohup ./start_uml.sh &
 
 enjoy!
