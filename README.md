@@ -48,7 +48,7 @@ export UML_MEM="16M"            # uml linux内存 最低16M
 
 > ./init_uml.sh 
 
-在运行并nohup
+在后台运行并nohup
 
 > nohup ./start_uml.sh &
 
