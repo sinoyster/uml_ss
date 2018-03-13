@@ -1,0 +1,9 @@
+{
+    "server":"0.0.0.0",
+    "server_port":${UML_SS_PORT},
+    "local_port":1080,
+    "password":"${UML_SS_PASSWD}",
+    "timeout":60,
+    "method":"${UML_SS_METHOD}"
+}
+

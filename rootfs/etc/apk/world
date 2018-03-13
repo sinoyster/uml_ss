@@ -1,0 +1,10 @@
+alpine-base
+dropbear
+dropbear-scp
+dropbear-ssh
+htop
+libev
+libsodium
+pcre
+shadowsocks-libev
+udns

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# swap on
+/sbin/mkswap /dev/ubda
+/sbin/swapon /dev/ubda
+
+# fix net
+sleep 3
+/etc/init.d/networking restart
+
+# fix pty
+mkdir /dev/pts
+mount -t devpts -o uid=0,gid=5,mode=620 devpts /dev/pts
+
+# start shadowsocks-libev server
+ss-server -c /etc/shadowsocks-libev/config.json -u > /dev/null &
+
