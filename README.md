@@ -1,10 +1,10 @@
 # uml_ss
+
 基于uml linux的bbr支持的shadowsocks模板，简单配置几个参数就可以启动纯绿色
 
 ## 用法
 
 vps需要打开tun/tap
-
 
 > git clone git@github.com:sinoyster/uml_ss.git
 
@@ -30,8 +30,8 @@ export UML_SS_METHOD="chacha20" # uml linux的加密方式，默认chacha20
 export UML_SS_PASSWD="ss123456" # uml linux的shadowsocks密码
 export UML_MEM="16M"            # uml linux内存 最低16M
 
-#root password: root1234
-#ssh -p 30022 ${UML_IP} # 如何登录uml linux ssh -p 30022 10.0.0.2
+#root password: root1234 # 登录密码
+#ssh -p 30022 ${UML_IP} # 如何登录uml linux: ssh -p 30022 10.0.0.2 
 
 ```
 
